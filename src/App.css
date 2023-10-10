@@ -1,0 +1,190 @@
+.App {
+  text-align: center;
+}
+
+h1 {
+  color: white;
+  font-size: 50px;
+}
+
+h2 {
+  color: white;
+  font-size: 25px;
+}
+
+body {
+  background-color: #222;
+  color: #fff;
+}
+
+.window-box {
+  width: 400px;
+  height: 200px;
+  background-color: #333;
+  border: 1px solid #ccc;
+  padding: 20px;
+  margin: 20px auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.window-controls {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.arrow-button {
+  background-color: #4caf50;
+  color: white;
+  padding: 20px;
+  border: none;
+  cursor: pointer;
+  font-size: 24px;
+  margin-bottom: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.arrow-button.disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.arrow-button:active {
+  background-color: #45a049;
+  box-shadow: 5px 5px #357d39;
+}
+
+.lock-button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 24px;
+}
+
+.locked {
+  color: red;
+}
+
+.unlocked {
+  color: green;
+}
+
+.weather-info {
+  text-align: left;
+  color: #fff;
+}
+
+.temperature {
+  font-size: 20px;
+}
+
+.weather-description {
+  font-size: 16px;
+  color: #777;
+}
+
+.hurricane-shutter-control input[type="datetime-local"] {
+  width: 10%;
+  padding: 10px;
+  font-size: 16px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.hurricane-shutter-control button {
+  background-color: #333;
+  color: white;
+  padding: 5px 10px;
+  border: none;
+  cursor: pointer;
+  font-size: 10px;
+  margin-top: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.hurricane-shutter-control button:hover {
+  background-color: #45a049;
+}
+
+.hurricane-shutter-control p {
+  font-size: 18px;
+  color: white;
+  margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+  .hurricane-shutter-control input[type="datetime-local"] {
+    font-size: 14px;
+  }
+
+  .hurricane-shutter-control button {
+    font-size: 16px;
+  }
+}
+
+.hurricane-shutter-control {
+  text-align: center;
+  padding: 20px;
+  width: 400px;
+  height: 200px;
+  background-color: #333;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.hurricane-shutter-control-column {
+  text-align: center;
+  padding: 20px;
+  width: 400px;
+  height: 200px;
+  background-color: #333;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.centered {
+  justify-content: center;
+}
+
+.back-button {
+  margin-top: 10px;
+}
+
+.hurricane-warning {
+  background-color: #ff7f50;
+  max-width: 200px;
+  color: white;
+  text-align: center;
+  translate: 70px 30px;
+  padding: 10px;
+  position: absolute;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.hurricane-warning p {
+  margin: 0;
+}
+
+.hurricane-warning button {
+  background-color: #f44336;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  cursor: pointer;
+  border-radius: 4px;
+  margin-top: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.hurricane-warning button:hover {
+  background-color: #d32f2f;
+}

@@ -1,0 +1,43 @@
+
+
+.temperature-graph-container,
+.uv-index-graph-container,
+.precipitation-graph-container,
+.window-efficiency-graph-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px; 
+  }
+
+  .recharts-cartesian-axis-tick-value {
+    font-size: 12px; 
+    fill: #333;
+  }
+  
+  .recharts-cartesian-axis-label {
+    font-size: 14px;
+    fill: #333;
+  }
+  
+  .recharts-tooltip {
+    background-color: rgba(255, 255, 255, 0.9);
+    border: 1px solid #ccc; 
+    padding: 10px;
+    box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.2);
+  }
+
+  .recharts-tooltip-label {
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .recharts-tooltip-item-value {
+    color: #888; 
+  }
+  
+  .recharts-legend-item-text {
+    font-size: 14px; 
+    fill: #333; 
+  }
+  

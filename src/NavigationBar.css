@@ -1,0 +1,38 @@
+
+.navigation-bar,
+.timeframe-controls {
+    display: flex;
+    margin-top: 10px; 
+    justify-content: center;
+  }
+  
+  .navigation-bar button,
+  .timeframe-controls button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 10px;
+    color: white; 
+    padding: 5px 5px; 
+    margin: 0 10px; 
+    transition: color 0.3s ease;
+  }
+  
+  .navigation-bar button.active,
+  .timeframe-controls button.active {
+    color: #007bff; 
+    font-weight: bold; 
+  }
+  
+  .navigation-bar button:hover,
+  .timeframe-controls button:hover {
+    color: #007bff; 
+  }
+  
+  .navigation-bar button.active,
+  .timeframe-controls button.active {
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 4px;
+  }
+  
